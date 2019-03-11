@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=800pix, initial-scale=1" />
+<style type="text/css">
+table.one {table-layout: fixed}
+div {width:50%}
+.papertitle {FONT-FAMILY: "Trebuchet MS"; FONT-SIZE: 24px; font-weight: bold; color: #0066CC; }
+.auther{FONT-FAMILY: "Times New Roman"; FONT-SIZE: 16px;}
+.sectitle{FONT-FAMILY: "Trebuchet MS"; FONT-SIZE: 20px; font-weight: bold; color: #0066CC;}
+.body{FONT-FAMILY: "Times New Roman"; FONT-SIZE: 16px;}
+</style>
+<title>High Dimensional Motion Deblurring</title>
+</head>
+
+<body>
+<hr align = "center" width = "900" />
+
+<table class="one" cellpadding="0"  cellspacing = "5%" align="center" width="900" id="researcsh">
+<tr>
+<td  width = "100%">
+<p class="papertitle" align="center">High-Dimensional Camera Shake Removal with Given Depth Map</p>
+</td>
+</tr>
+<tr>
+<td width="100%">
+<p class="auther" align="center"><a href="../index.html">Tao Yue</a><sup></sup>, Jinli Suo<sup></sup>, <a href="http://media.au.tsinghua.edu.cn/qhdai.html">Qionghai Dai</a><sup></sup></p>
+<p class="auther" align="center"><sup></sup>Deptartment of Automation, Tsinghua University</p>
+</td>
+</tr>
+</table>
+
+
+
+<hr align = "center" width = "900" />
+
+<table align = "center" width = "900">
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<img src="../img/research/depth/depth.png" alt="Diagram of Our Depth-Aware High-Dimensional Motion Deblurring" align = "center" width = "700">
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<p class="sectitle" align = "left">Abstract</p>
+<p class="body" align = "justify"> Camera motion blur is drastically nonuniform for large depth-range scenes, and the nonuniformity caused by camera translation is depth dependent but not the case for camera rotations. To restore the blurry images of large-depthrange scenes deteriorated by arbitrary camera motion, we build an image blur model considering 6-degrees of freedom (DoF) of camera motion with a given scene depth map. To make this 6D depth-aware model tractable, we propose a novel parametrization strategy to reduce the number of variables and an effective method to estimate high-dimensional camera motion as well. The number of variables is reduced by temporal sampling motion function, which describes the 6-DoF camera motion by sampling the camera trajectory uniformly in time domain. To effectively estimate the high-dimensional camera motion parameters, we
+construct the probabilistic motion density function (PMDF) to describe the probability distribution of camera poses during exposure, and apply it as a unified constraint to guide the convergence of the iterative deblurring algorithm. Specifically, PMDF is computed through a back projection from 2D local blur kernels to 6D camera motion parameter space and robust voting. We conduct a series of experiments on both synthetic and real captured data, and validate that our method achieves better performance than existing uniform methods and nonuniform methods on large-depth-range scenes.</p> 
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<p class="sectitle" align = "left">Results</p>
+<img src="../img/research/depth/results.png" alt="Results of the High-Dimensional Motion Deblurring Method" align = "center" width = "700">
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td width = "900">
+<p class="sectitle" align = "left">Bibtex</p>
+<p class="body"><pre align = "left">
+@article{yue2014highdim,
+  title={High-dimensional camera shake removal with given depth map},
+  author={Yue, Tao and Suo, Jinli and Dai, Qionghai},
+  journal={IEEE Transactions on Image Processing},
+  volume={23},
+  number={6},
+  pages={2688-2703},
+  year={2014},
+  organization={IEEE}
+}
+</pre>
+</p>
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td width = "900" align = "justify">
+<p class="sectitle" align = "left">Publications</p>
+<ul class="body">
+<li><strong>Tao Yue</strong>, Jinli Suo, and Qionghai Dai. <a href="./papers/tip14-HighDim.pdf">High-dimensional camera shake removal with given depth map.</a> IEEE Transactions on Image Processing, 23(6):2688-2703, June 2014.</li>
+</ul>
+</td>
+</tr>
+
+
+
+</table>
+
+<hr align = "center" width = "900" />
+
+</body>
+
+</html>

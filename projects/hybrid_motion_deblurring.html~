@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=800pix, initial-scale=1" />
+<style type="text/css">
+table.one {table-layout: fixed}
+div {width:50%}
+.papertitle {FONT-FAMILY: "Trebuchet MS"; FONT-SIZE: 24px; font-weight: bold; color: #0066CC; }
+.auther{FONT-FAMILY: "Times New Roman"; FONT-SIZE: 16px;}
+.sectitle{FONT-FAMILY: "Trebuchet MS"; FONT-SIZE: 20px; font-weight: bold; color: #0066CC;}
+.body{FONT-FAMILY: "Times New Roman"; FONT-SIZE: 16px;}
+</style>
+<title>Hybrid Motion Deblurring</title>
+</head>
+
+<body>
+<hr align = "center" width = "900" />
+
+<table class="one" cellpadding="0"  cellspacing = "5%" align="center" width="900" id="researcsh">
+<tr>
+<td  width = "100%">
+<p class="papertitle" align="center">Hybrid Image Deblurring by Fusing Edge and Power Spectrum Information</p>
+</td>
+</tr>
+<tr>
+<td width="100%">
+<p class="auther" align="center"><a href="../index.html">Tao Yue</a><sup>1</sup>, <a href="http://www.scho.pe.kr">Sunghyun Cho</a><sup>2</sup>, <a href="http://www.juew.org">Jue Wang</a><sup>2</sup>, <a href="http://media.au.tsinghua.edu.cn/qhdai.html">Qionghai Dai</a><sup>1</sup></p>
+<p class="auther" align="center"><sup>1</sup>Deptartment of Automation, Tsinghua University</p>
+<p class="auther" align="center"><sup>2</sup>Adobe Research</p>
+
+</td>
+</tr>
+</table>
+
+
+
+<hr align = "center" width = "900" />
+
+<table align = "center" width = "900">
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<img src="../img/research/hybrid-deblur/hybrid-deblur.png" alt="Diagram of Hybrid Kernel Estimation Method" align = "center" width = "700">
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<p class="sectitle" align = "left">Abstract</p>
+<p class="body" align = "justify">Recent blind deconvolution methods rely on either salient edges or the power spectrum of the input image for estimating the blur kernel, but not both. In this work we show that the two methods are inherently complimentary to each other. Edge-based methods work well for images containing large salient structures, but fail on small-scale textures. Power-spectrum-based methods, on the contrary, are efficient on textural regions but not on structural edges. This observation inspires us to propose a hybrid approach that combines edge-based and power-spectrum-based priors for more robust deblurring. Given an input image, our method first derives a structure prediction that coincides with the edge-based priors, and then extracts dominant edges from it to eliminate the errors in computing the power-spectrum-based priors. These two priors are then integrated in a combined cost function for blur kernel estimation. Experimental results show that the proposed approach is more robust and achieves higher quality results than previous methods on both real world and synthetic examples.</p> 
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<p class="sectitle" align = "left">Results</p>
+<img src="../img/research/hybrid-deblur/syn_results.png" alt="Experiments on Synthetic Data" align = "center" width = "700">
+<p class="body" align = "justify">Figure 1. Qualitative comparisons on four synthetically blurred images from Sun et al.'s dataset [9]. From left to right: ground truth image and kernel, latent image and kernel estimated by Cho and Lee [4], Goldstein and Fattal [11], Sun et al. [9] and proposed method, respectively.</p>
+
+<p></p>
+<p class="body" align = "center">Table 1. Quantative comparsion on Kohler et al.'s dataset [23].</p>
+<img src="../img/research/hybrid-deblur/syn_table.png" alt="SSIM and PSNR on Synthetic Data" align = "center" width = "700">
+
+
+<p></p>
+<img src="../img/research/hybrid-deblur/real_results.png" alt="Experiments on Real Captured Data" align = "center" width = "700">
+<p class="body" align = "center">Figure 2. Comparisons on real-world examples.</p>
+</td>
+</tr>
+
+
+<tr align = "center" width = "900">
+<td width = "900">
+<p class="sectitle" align = "left">Bibtex</p>
+<p class="body"><pre align = "left">
+@article{yue2014hybrid,    
+title={Hybrid image deblurring by fusing edge and power spectrum information},    
+author={Yue, Tao and Sunghyun Cho and Wang, Jue and Dai, Qionghai},    
+booktitle={European Conference on Computer Vision(ECCV)},    
+pages={79--93},    
+year={2014} 
+}
+</pre>
+</p>
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td width = "900" align = "justify">
+<p class="sectitle" align = "left">Publications</p>
+<ul class="body">
+<li><strong>Tao Yue</strong>, Jinli Suo, Jue Wang, Xun Cao, and Qionghai Dai. <a href="../papers/cvpr15-opticalabberation.pdf">Blind optical aberration correction by exploring geometric and visual priors.</a> In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pages 1684-1692, 2015.</li>
+</ul>
+</td>
+</tr>
+
+
+
+</table>
+
+
+<!-- <p class="auther" align="center"><sup>*</sup>Sunghyun Cho is currently with Samsung Electronics.</p> -->
+<hr align = "center" width = "900" />
+
+</body>
+
+</html>

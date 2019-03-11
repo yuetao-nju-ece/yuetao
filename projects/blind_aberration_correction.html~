@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=800pix, initial-scale=1" />
+<style type="text/css">
+table.one {table-layout: fixed}
+div {width:50%}
+.papertitle {FONT-FAMILY: "Trebuchet MS"; FONT-SIZE: 24px; font-weight: bold; color: #0066CC; }
+.auther{FONT-FAMILY: "Times New Roman"; FONT-SIZE: 16px;}
+.sectitle{FONT-FAMILY: "Trebuchet MS"; FONT-SIZE: 20px; font-weight: bold; color: #0066CC;}
+.body{FONT-FAMILY: "Times New Roman"; FONT-SIZE: 16px;}
+</style>
+<title>Blind Aberration Correction</title>
+</head>
+
+<body>
+<hr align = "center" width = "900" />
+
+<table class="one" cellpadding="0"  cellspacing = "5%" align="center" width="900" id="researcsh">
+<tr>
+<td  width = "100%">
+<p class="papertitle" align="center">Blind Optical Aberration Correction by Exploring Geometric and Visual Priors</p>
+</td>
+</tr>
+<tr>
+<td width="100%">
+<p class="auther" align="center"><a href="../index.html">Tao Yue</a><sup>1</sup>, Jinli Suo<sup>1</sup>, <a href="http://www.juew.org">Jue Wang</a><sup>3</sup>, <a href="http://cite.nju.edu.cn/cao.html">Cao Xun</a><sup>2</sup>, <a href="http://media.au.tsinghua.edu.cn/qhdai.html">Qionghai Dai</a><sup>1</sup></p>
+<p class="auther" align="center"><sup>1</sup>Deptartment of Automation, Tsinghua University</p>
+<p class="auther" align="center"><sup>2</sup>School of Electronic Science and Technology, Nanjing University</p>
+<p class="auther" align="center"><sup>3</sup>Adobe Research</p>
+</td>
+</tr>
+</table>
+
+
+
+<hr align = "center" width = "900" />
+
+<table align = "center" width = "900">
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<img src="../img/research/blind-deaberration/blind-deaberation.png" alt="Diagram of Blind Optical Aberration Method" align = "center" width = "700">
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<p class="sectitle" align = "left">Abstract</p>
+<p class="body" align = "justify">Optical aberration widely exists in optical imaging systems, especially in consumer-level cameras. In contrast to previous solutions using hardware compensation or precalibration, we propose a computational approach for blind aberration removal from a single image, by exploring various geometric and visual priors. The global rotational symmetry allows us to transform the non-uniform degeneration into several uniform ones by the proposed radial splitting and warping technique. Locally, two types of symmetry constraints, i.e. central symmetry and reflection symmetry are defined as geometric priors in central and surrounding regions, respectively. Furthermore, by investigating the visual artifacts of aberration degenerated images captured by consumer-level cameras, the non-uniform distribution of sharpness across color channels and the image lattice is exploited as visual priors, resulting in a novel strategy to utilize the guidance from the sharpest channel and local image regions to improve the overall performance and robustness. Extensive evaluation on both real and synthetic data suggests that the proposed method outperforms the state-of-the-art techniques.</p>
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td align = "center" width = "900">
+<p class="sectitle" align = "left">Results</p>
+<img src="../img/research/blind-deaberration/results.png" alt="Diagram of Blind Optical Aberration Method" align = "center" width = "700">
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td width = "900">
+<p class="sectitle" align = "left">Bibtex</p>
+<p class="body"><pre align = "left">
+@article{yue2015aberration,    
+title={Blind optical aberration correction by exploring geometric and visual priors},    
+author={Yue, Tao and Suo, Jinli and Wang, Jue and Cao, Xun and Dai, Qionghai},    
+booktitle={IEEE Conference on Computer Vision and Pattern Recognition(CVPR)},    
+pages={1684--1692},    
+year={2015} 
+}
+</pre>
+</p>
+</td>
+</tr>
+
+<tr align = "center" width = "900">
+<td width = "900" align = "justify">
+<p class="sectitle" align = "left">Publications</p>
+<ul class="body">
+<li><strong>Tao Yue</strong>, Jinli Suo, Jue Wang, Xun Cao, and Qionghai Dai. <a href="../paper/cvpr15-opticalabberation.pdf">Blind optical aberration correction by exploring geometric and visual priors.</a> In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pages 1684-1692, 2015.</li>
+</ul>
+</td>
+</tr>
+
+
+
+</table>
+
+<hr align = "center" width = "900" />
+
+</body>
+
+</html>
